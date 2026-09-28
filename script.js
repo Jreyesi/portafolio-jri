@@ -56,12 +56,39 @@ document.addEventListener('DOMContentLoaded', () => {
     const formStatus = document.getElementById('formStatus');
 
     if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
+        contactForm.addEventListener('submit', async (e) => {
             e.preventDefault();
-            formStatus.textContent = "Mensaje enviado correctamente. Me pondré en contacto pronto.";
-            formStatus.style.color = "var(--color-primary)";
+            
+            formStatus.textContent = "Enviando mensaje...";
+            formStatus.style.color = "var(--color-text)";
+            
+            const formData = new FormData(contactForm);
+            
+            try {
+                const response = await fetch(contactForm.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+                
+                if (response.ok) {
+                    formStatus.textContent = "Mensaje enviado correctamente. Me pondré en contacto pronto.";
+                    formStatus.style.color = "var(--color-primary)";
+                    contactForm.reset();
+                    const textarea = document.getElementById('mensaje');
+                    if(textarea) textarea.style.height = '120px';
+                } else {
+                    formStatus.textContent = "Hubo un problema al enviar el mensaje. Inténtalo de nuevo.";
+                    formStatus.style.color = "#ff4444";
+                }
+            } catch (error) {
+                formStatus.textContent = "Error de conexión. Revisa tu internet e inténtalo de nuevo.";
+                formStatus.style.color = "#ff4444";
+            }
+            
             formStatus.style.marginTop = "1rem";
-            contactForm.reset();
             
             setTimeout(() => {
                 formStatus.textContent = "";
