@@ -19,8 +19,6 @@ El sitio ha sido construido aplicando estrictamente los estándares modernos de 
 El portafolio se encuentra desplegado públicamente a través de GitHub Pages.
 🔗 **[Ver Portafolio en Vivo (URL_DE_TU_GITHUB_PAGES)](https://jreyesi.github.io/tu-repositorio)**
 
-> *Nota: Reemplazar la URL superior por el enlace generado tras la configuración en la pestaña 'Settings > Pages' del repositorio.*
-
 ## 🛠️ Tecnologías Utilizadas
 
 - **HTML5:** Utilización de etiquetas semánticas (`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<figure>`, `<footer>`) para mejorar la accesibilidad y el SEO.
@@ -50,18 +48,6 @@ El proyecto incluye una sección dedicada a la documentación del **Design Syste
 - Ejemplos de escala tipográfica (H1, H2, H3, Párrafos).
 - Componentes modulares y reutilizables en todo el sitio, como botones, *badges* (etiquetas tecnológicas), inputs de formulario y *Cards* de proyectos.
 
-## 📸 Capturas de Pantalla
-
-> **Instrucciones para la entrega final:** Una vez publicado, toma capturas de pantalla de tu sitio (vista de escritorio y vista móvil) y guárdalas en la carpeta `/assets/img/`. Luego, reemplaza las rutas a continuación:
-
-*Vista Principal / Hero*
-![Vista de Inicio](ruta-a-tu-captura-1.png)
-
-*Modo Claro vs Modo Oscuro*
-![Cambio de Tema](ruta-a-tu-captura-2.png)
-
-*Vista Móvil (Menú y Responsividad)*
-![Vista Móvil](ruta-a-tu-captura-3.png)
 
 ## 👤 Autor
 
