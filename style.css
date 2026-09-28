@@ -189,17 +189,29 @@ p { margin-bottom: var(--space-md); }
     margin-bottom: var(--space-xs);
     font-weight: 600;
 }
-.form-group input, .form-group textarea {
+.form-group input, 
+.form-group textarea {
     padding: var(--space-sm);
     border: 1px solid var(--color-border);
     border-radius: var(--radius-sm);
     background-color: var(--color-background);
     color: var(--color-text);
     font-family: inherit;
+    width: 100%;
 }
-.form-group input:focus, .form-group textarea:focus {
-    outline: none;
-    border-color: var(--color-primary);
+
+/* Regla EXCLUSIVA para mantener pequeños los campos de Nombre y Correo */
+.form-group input {
+    height: 45px; /* Altura fija pequeña */
+    min-height: 45px;
+}
+
+/* Regla EXCLUSIVA para el cuadro de Mensaje */
+.form-group textarea {
+    resize: none; 
+    overflow: hidden; 
+    min-height: 120px; /* Altura base más grande */
+    padding-top: var(--space-sm);
 }
 .ds-grid {
     display: grid;
@@ -356,7 +368,7 @@ p { margin-bottom: var(--space-md); }
     bottom: 2rem;
     right: 2rem;
     background-color: var(--color-primary);
-    color: #1C1C1C; /* Color oscuro para contraste */
+    color: #1C1C1C; 
     border: none;
     width: 3rem;
     height: 3rem;
@@ -368,9 +380,9 @@ p { margin-bottom: var(--space-md); }
     justify-content: center;
     align-items: center;
     box-shadow: var(--shadow-card);
-    opacity: 0; /* Oculto por defecto */
+    opacity: 0; 
     visibility: hidden;
-    transform: translateY(20px); /* Efecto de desplazamiento */
+    transform: translateY(20px); 
     transition: opacity var(--transition-fast), visibility var(--transition-fast), transform var(--transition-fast), background-color var(--transition-fast);
     z-index: 1000;
 }
@@ -378,10 +390,25 @@ p { margin-bottom: var(--space-md); }
 .scroll-top-btn.show {
     opacity: 1;
     visibility: visible;
-    transform: translateY(0); /* Vuelve a su posición original */
+    transform: translateY(0); 
 }
 
 .scroll-top-btn:hover {
     background-color: var(--color-secondary);
-    transform: translateY(-5px); /* Efecto hover subiendo un poco */
+    transform: translateY(-5px); 
+}
+#contacto {
+    padding-top: var(--space-lg); 
+    padding-bottom: var(--space-lg);
+    min-height: auto;
+}
+.contact-form-container {
+    max-width: 600px;
+    margin: 0 auto; 
+    width: 100%;
+}
+.section-title.left-align {
+    text-align: left;
+    display: block;
+    margin-bottom: var(--space-md);
 }
