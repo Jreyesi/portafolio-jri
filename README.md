@@ -17,7 +17,7 @@ El sitio ha sido construido aplicando estrictamente los estándares modernos de 
 ## 🚀 Enlace de Visualización
 
 El portafolio se encuentra desplegado públicamente a través de GitHub Pages.
-🔗 **[Ver Portafolio en Vivo (URL_DE_TU_GITHUB_PAGES)](https://jreyesi.github.io/portafolio-jri)**
+🔗 **[Ver Portafolio en Vivo](https://jreyesi.github.io/portafolio-jri)**
 
 ## 🛠️ Tecnologías Utilizadas
 
