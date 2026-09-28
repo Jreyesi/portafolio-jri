@@ -179,11 +179,7 @@ p { margin-bottom: var(--space-md); }
     gap: var(--space-xs);
     margin: var(--space-md) 0;
 }
-.contact-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--space-lg);
-}
+
 .form-group {
     margin-bottom: var(--space-md);
     display: flex;
@@ -284,12 +280,6 @@ p { margin-bottom: var(--space-md); }
     color: var(--color-primary);
     border: 1px solid var(--color-primary);
 }
-.footer {
-    text-align: center;
-    padding: var(--space-lg);
-    background-color: var(--color-surface);
-    border-top: 1px solid var(--color-border);
-}
 @media (max-width: 768px) {
     .menu-toggle { display: block; }
     .nav-links {
@@ -308,4 +298,90 @@ p { margin-bottom: var(--space-md); }
     .about-grid, .contact-grid { grid-template-columns: 1fr; }
     h1 { font-size: 2rem; }
     .hero-actions { flex-direction: column; }
+}
+.contact-form-container {
+    max-width: 600px;
+    margin: 0; 
+}
+
+.section-title.left-align {
+    text-align: left;
+    display: inline-block;
+}
+
+.footer {
+    text-align: center;
+    padding: var(--space-xl) 5% var(--space-md);
+    background-color: var(--color-surface);
+    border-top: 1px solid var(--color-border);
+}
+
+.footer-info {
+    margin-bottom: var(--space-lg);
+}
+
+.footer-info h3 {
+    color: var(--color-secondary);
+    margin-bottom: var(--space-md);
+    font-size: 1.5rem;
+}
+
+.footer-info p {
+    margin-bottom: var(--space-sm);
+    color: var(--color-text);
+}
+
+.footer-link {
+    color: var(--color-primary);
+}
+
+.footer-link:hover {
+    color: var(--color-text);
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-md);
+    margin-top: var(--space-md);
+}
+
+.footer-copyright {
+    padding-top: var(--space-md);
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+}
+.scroll-top-btn {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: var(--color-primary);
+    color: #1C1C1C; /* Color oscuro para contraste */
+    border: none;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--shadow-card);
+    opacity: 0; /* Oculto por defecto */
+    visibility: hidden;
+    transform: translateY(20px); /* Efecto de desplazamiento */
+    transition: opacity var(--transition-fast), visibility var(--transition-fast), transform var(--transition-fast), background-color var(--transition-fast);
+    z-index: 1000;
+}
+
+.scroll-top-btn.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0); /* Vuelve a su posición original */
+}
+
+.scroll-top-btn:hover {
+    background-color: var(--color-secondary);
+    transform: translateY(-5px); /* Efecto hover subiendo un poco */
 }

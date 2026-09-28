@@ -106,7 +106,7 @@
                     </div>
                 </article>
                 <article class="project-card" data-category="web">
-                    <img src="assets\img\webview_ristorante.png" alt="Captura de WebView_Ristorante">
+                    <img src="assets\img\webview.png" alt="Captura de WebView_Ristorante">
                     <div class="project-content">
                         <h3>WebView_Ristorante</h3>
                         <p>Aplicación web académica gestionada como líder de equipo y DevOps. Estructuración de arquitectura frontend y despliegue en contenedores.</p>
@@ -116,7 +116,7 @@
                             <span class="tech-tag">Docker</span>
                             <span class="tech-tag">Nginx</span>
                         </div>
-                        <a href="#" class="btn btn-secondary btn-sm">Ver Proyecto</a>
+                        <a href="https://github.com/Jreyesi/WebView_Ristorante" class="btn btn-secondary btn-sm">Ver Repositorio</a>
                     </div>
                 </article>
                 <article class="project-card" data-category="ia web">
@@ -128,7 +128,19 @@
                             <span class="tech-tag">Next.js</span>
                             <span class="tech-tag">NLP</span>
                         </div>
-                        <a href="#" class="btn btn-secondary btn-sm">Ver Repositorio</a>
+                        <a href="#proyectos" class="btn btn-secondary btn-sm">EN DESARROLLO</a>
+                    </div>
+                </article>
+                <article class="project-card" data-category="backend">
+                    <img src="assets\img\DL.png" alt="Captura de simulación en Colab">
+                    <div class="project-content">
+                        <h3>Deep Learning for Image Recognition</h3>
+                        <p>Desarrollo de modelos de aprendizaje profundo para la identificación y clasificación de imágenes en entornos de ejecución interactivos enfocados en la detección de enfermedades en los cultivos de mango.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Google Colab</span>
+                        </div>
+                        <a href="https://colab.research.google.com/drive/1_uFUvKoLF7H0ObralYjulfvpTUb3YGvB?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Ver Notebook</a>
                     </div>
                 </article>
             </div>
@@ -171,32 +183,45 @@
                 <div class="ds-block">
                     <h3>Componentes Reutilizables</h3>
                     <div class="component-samples">
-                        <button class="btn btn-primary">Botón Primario</button>
-                        <button class="btn btn-secondary">Botón Secundario</button>
-                        <br><br>
-                        <span class="skill-badge">Skill / Badge</span>
-                        <br><br>
-                        <div class="form-group">
+                        <div style="margin-bottom: 2rem;">
+                            <h4>Botones y Etiquetas</h4>
+                            <br>
+                            <button class="btn btn-primary">Botón Primario</button>
+                            <button class="btn btn-secondary">Botón Secundario</button>
+                            <br><br>
+                            <span class="skill-badge">Skill / Badge</span>
+                            <span class="tech-tag">Tech Tag</span>
+                        </div>
+
+                        <div class="form-group" style="margin-bottom: 2rem;">
+                            <h4>Inputs</h4>
+                            <br>
                             <label for="ds-input">Input de texto</label>
                             <input type="text" id="ds-input" placeholder="Ejemplo de input">
                         </div>
+
+                        <div style="margin-bottom: 2rem;">
+                            <h4>Card de Proyecto</h4>
+                            <br>
+                            <article class="project-card" style="max-width: 350px;">
+                                <img src="https://via.placeholder.com/400x200" alt="Captura de ejemplo del componente">
+                                <div class="project-content">
+                                    <h3>Título del Componente</h3>
+                                    <p>Descripción estructurada para demostrar el uso del componente Card reutilizable dentro del sistema de diseño.</p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">Tecnología 1</span>
+                                        <span class="tech-tag">Tecnología 2</span>
+                                    </div>
+                                    <a href="#" class="btn btn-secondary btn-sm">Ver Enlace</a>
+                                </div>
+                            </article>
+                        </div>
                     </div>
                 </div>
-            </div>
         </section>
         <section id="contacto" class="section">
-            <h2 class="section-title">Contacto</h2>
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <h3>Información Profesional</h3>
-                    <p>Ubicación: Virgen de Fátima, Yaguachi, Ecuador[cite: 1]</p>
-                    <p>Email: <a href="mailto:jackreyibar@gmail.com">jackreyibar@gmail.com</a>[cite: 1]</p>
-                    <p>Teléfono: +593 96 776 3768[cite: 1]</p>
-                    <div class="social-links">
-                        <a href="https://github.com/Jreyesi" target="_blank" class="btn btn-secondary btn-sm">GitHub</a>
-                        <a href="https://linkedin.com/in/jreyesi3" target="_blank" class="btn btn-secondary btn-sm">LinkedIn</a>
-                    </div>
-                </div>
+            <div class="contact-form-container">
+                <h2 class="section-title left-align">Contacto</h2>
                 <form id="contactForm" class="contact-form">
                     <div class="form-group">
                         <label for="nombre">Nombre completo</label>
@@ -217,7 +242,20 @@
         </section>
     </main>
     <footer class="footer">
-        <p>&copy; 2026 Jackson Enrique Reyes Ibarra. Todos los derechos reservados.</p>
+        <div class="footer-info">
+            <h3>Información Profesional</h3>
+            <p>Ubicación: Virgen de Fátima, Yaguachi, Ecuador</p>
+            <p>Email: <a href="mailto:jackreyibar@gmail.com" class="footer-link">jackreyibar@gmail.com</a></p>
+            <p>Teléfono: +593 96 776 3768</p>
+            <div class="social-links">
+                <a href="https://github.com/Jreyesi" target="_blank" class="btn btn-secondary btn-sm">GitHub</a>
+                <a href="https://linkedin.com/in/jreyesi3" target="_blank" class="btn btn-secondary btn-sm">LinkedIn</a>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>&copy; 2026 Jackson Enrique Reyes Ibarra. Todos los derechos reservados.</p>
+        </div>
+        <button id="scrollTopBtn" class="scroll-top-btn" aria-label="Volver al inicio">&#8593;</button>
     </footer>
     <script src="script.js"></script>
 </body>
