@@ -53,14 +53,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     const contactForm = document.getElementById('contactForm');
-    const formStatus = document.getElementById('formStatus');
+    const toastNotification = document.getElementById('toastNotification');
 
     if (contactForm) {
         contactForm.addEventListener('submit', async (e) => {
             e.preventDefault();
-            
-            formStatus.textContent = "Enviando mensaje...";
-            formStatus.style.color = "var(--color-text)";
             
             const formData = new FormData(contactForm);
             
@@ -74,26 +71,28 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
                 
                 if (response.ok) {
-                    formStatus.textContent = "Mensaje enviado correctamente. Me pondré en contacto pronto.";
-                    formStatus.style.color = "var(--color-primary)";
+                    showToast("Mensaje enviado correctamente. Me pondré en contacto pronto.");
                     contactForm.reset();
                     const textarea = document.getElementById('mensaje');
                     if(textarea) textarea.style.height = '120px';
                 } else {
-                    formStatus.textContent = "Hubo un problema al enviar el mensaje. Inténtalo de nuevo.";
-                    formStatus.style.color = "#ff4444";
+                    showToast("Hubo un problema al enviar el mensaje. Inténtalo de nuevo.", true);
                 }
             } catch (error) {
-                formStatus.textContent = "Error de conexión. Revisa tu internet e inténtalo de nuevo.";
-                formStatus.style.color = "#ff4444";
+                showToast("Error de conexión. Revisa tu internet e inténtalo de nuevo.", true);
             }
-            
-            formStatus.style.marginTop = "1rem";
-            
-            setTimeout(() => {
-                formStatus.textContent = "";
-            }, 5000);
         });
+    }
+
+    function showToast(message, isError = false) {
+        toastNotification.textContent = message;
+        toastNotification.style.color = isError ? "#ff4444" : "var(--color-primary)";
+        toastNotification.style.borderColor = isError ? "#ff4444" : "var(--color-primary)";
+        toastNotification.classList.add('show');
+        
+        setTimeout(() => {
+            toastNotification.classList.remove('show');
+        }, 4000);
     }
 
     const scrollTopBtn = document.getElementById('scrollTopBtn');
