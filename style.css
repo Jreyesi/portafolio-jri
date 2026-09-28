@@ -412,3 +412,9 @@ p { margin-bottom: var(--space-md); }
     display: block;
     margin-bottom: var(--space-md);
 }
+.skill-level {
+    font-size: 0.75rem;
+    opacity: 0.8;
+    margin-left: 0.3rem;
+    font-weight: normal;
+}
