@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jackson Reyes Ibarra | Desarrollador Full Stack</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">JRI.</div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#design-system">Design System</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">🌓</button>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
+        </nav>
+    </header>
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <h1>Hola, soy Jackson Enrique Reyes Ibarra</h1>
+                <h2 class="subtitle">Desarrollador Full Stack</h2>
+                <p>Especializado en automatización de procesos, despliegue de servidores y optimización de sistemas en producción.</p>
+                <div class="hero-actions">
+                    <a href="#proyectos" class="btn btn-primary">Ver mis proyectos</a>
+                    <a href="#contacto" class="btn btn-secondary">Contactar</a>
+                </div>
+            </div>
+        </section>
+        <section id="sobre-mi" class="section">
+            <h2 class="section-title">Sobre mí</h2>
+            <article class="about-grid">
+                <figure class="about-avatar">
+                    <img src="https://via.placeholder.com/300" alt="Fotografía de Jackson Reyes Ibarra">
+                </figure>
+                <div class="about-text">
+                    <p>Soy un Desarrollador Full Stack con experiencia en desarrollo de software y administración de sistemas en entornos Linux[cite: 1]. Destaco por mi capacidad analítica, rápida adaptación a nuevas tecnologías y enfoque en la eficiencia operativa[cite: 1].</p>
+                    <p>Actualmente estudio Ingeniería en Software en la Universidad Estatal de Milagro (UNEMI) desde 2022[cite: 1]. Recientemente trabajé como Asistente de Desarrollo de Software en la Empresa Pública Municipal de Movilidad, Tránsito y Transporte de Milagro (EMOVIM EP), automatizando procesos con Python y administrando servidores CentOS/Rocky[cite: 1].</p>
+                </div>
+            </article>
+        </section>
+        <section id="habilidades" class="section">
+            <h2 class="section-title">Habilidades Técnicas</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Backend & Lenguajes</h3>
+                    <ul class="skill-list">
+                        <li><span class="skill-badge">Python</span></li>
+                        <li><span class="skill-badge">PHP</span></li>
+                        <li><span class="skill-badge">JavaScript</span></li>
+                        <li><span class="skill-badge">Node.js</span></li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <ul class="skill-list">
+                        <li><span class="skill-badge">HTML5</span></li>
+                        <li><span class="skill-badge">CSS3</span></li>
+                        <li><span class="skill-badge">React</span></li>
+                        <li><span class="skill-badge">Vue 3</span></li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Infraestructura & Cloud</h3>
+                    <ul class="skill-list">
+                        <li><span class="skill-badge">Linux (CentOS/Rocky)</span></li>
+                        <li><span class="skill-badge">Servidores Apache</span></li>
+                        <li><span class="skill-badge">Docker</span></li>
+                        <li><span class="skill-badge">Git</span></li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Bases de Datos & Certificaciones</h3>
+                    <ul class="skill-list">
+                        <li><span class="skill-badge">SQL</span></li>
+                        <li><span class="skill-badge">PostgreSQL</span></li>
+                        <li><span class="skill-badge">AWS Academy Cloud</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="proyectos" class="section">
+            <h2 class="section-title">Proyectos Destacados</h2>
+            <div class="project-filters">
+                <button class="btn-filter active" data-filter="all">Todos</button>
+                <button class="btn-filter" data-filter="ia">Inteligencia Artificial</button>
+                <button class="btn-filter" data-filter="web">Desarrollo Web</button>
+            </div>
+            <div class="projects-grid">
+                <article class="project-card" data-category="ia">
+                    <img src="https://via.placeholder.com/400x200" alt="Captura del proyecto Medic IA">
+                    <div class="project-content">
+                        <h3>Medic IA</h3>
+                        <p>Sistema universitario de inteligencia artificial que procesa un dataset de 5,000 enfermedades y síntomas para sugerir diagnósticos potenciales.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">IA/ML</span>
+                        </div>
+                        <a href="#" class="btn btn-secondary btn-sm">Ver Repositorio</a>
+                    </div>
+                </article>
+                <article class="project-card" data-category="web">
+                    <img src="https://via.placeholder.com/400x200" alt="Captura de WebView_Ristorante">
+                    <div class="project-content">
+                        <h3>WebView_Ristorante</h3>
+                        <p>Aplicación web académica gestionada como líder de equipo y DevOps. Estructuración de arquitectura frontend y despliegue en contenedores.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Vue 3</span>
+                            <span class="tech-tag">Vite</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">Nginx</span>
+                        </div>
+                        <a href="#" class="btn btn-secondary btn-sm">Ver Proyecto</a>
+                    </div>
+                </article>
+                <article class="project-card" data-category="ia web">
+                    <img src="https://via.placeholder.com/400x200" alt="Captura de Auditoría Bibliográfica">
+                    <div class="project-content">
+                        <h3>Auditoría Bibliográfica Automatizada</h3>
+                        <p>Aplicación web de grado para la validación de referencias bibliográficas utilizando modelos de Inferencia de Lenguaje Natural (NLI).</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">NLP</span>
+                        </div>
+                        <a href="#" class="btn btn-secondary btn-sm">Ver Repositorio</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section id="design-system" class="section ds-section">
+            <h2 class="section-title">Design System / Componentes</h2>
+            <p>Documentación de las decisiones visuales y componentes reutilizables aplicados en el portafolio.</p>
+            <div class="ds-grid">
+                <div class="ds-block">
+                    <h3>Colores</h3>
+                    <div class="color-palette">
+                        <div class="color-swatch" style="background-color: var(--color-background); border: 1px solid var(--color-border);">
+                            <span>Background</span>
+                            <span>#1C1C1C</span>
+                        </div>
+                        <div class="color-swatch" style="background-color: var(--color-primary); color: #1c1c1c;">
+                            <span>Primary</span>
+                            <span>#BFA181</span>
+                        </div>
+                        <div class="color-swatch" style="background-color: var(--color-secondary); color: #1c1c1c;">
+                            <span>Secondary</span>
+                            <span>#D4C5B0</span>
+                        </div>
+                        <div class="color-swatch" style="background-color: var(--color-accent); color: #1c1c1c;">
+                            <span>Accent/Text</span>
+                            <span>#F4F4F4</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="ds-block">
+                    <h3>Tipografía</h3>
+                    <div class="typography-samples">
+                        <h1>Encabezado H1 (2.5rem)</h1>
+                        <h2>Encabezado H2 (2rem)</h2>
+                        <h3>Encabezado H3 (1.5rem)</h3>
+                        <p><strong>Párrafo:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Utilizamos la fuente de sistema sin serifas para mayor legibilidad.</p>
+                        <a href="#">Enlace de ejemplo</a>
+                    </div>
+                </div>
+                <div class="ds-block">
+                    <h3>Componentes Reutilizables</h3>
+                    <div class="component-samples">
+                        <button class="btn btn-primary">Botón Primario</button>
+                        <button class="btn btn-secondary">Botón Secundario</button>
+                        <br><br>
+                        <span class="skill-badge">Skill / Badge</span>
+                        <br><br>
+                        <div class="form-group">
+                            <label for="ds-input">Input de texto</label>
+                            <input type="text" id="ds-input" placeholder="Ejemplo de input">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contacto" class="section">
+            <h2 class="section-title">Contacto</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Información Profesional</h3>
+                    <p>Ubicación: Virgen de Fátima, Yaguachi, Ecuador[cite: 1]</p>
+                    <p>Email: <a href="mailto:jackreyibar@gmail.com">jackreyibar@gmail.com</a>[cite: 1]</p>
+                    <p>Teléfono: +593 96 776 3768[cite: 1]</p>
+                    <div class="social-links">
+                        <a href="https://github.com/Jreyesi" target="_blank" class="btn btn-secondary btn-sm">GitHub</a>
+                        <a href="https://linkedin.com/in/jreyesi3" target="_blank" class="btn btn-secondary btn-sm">LinkedIn</a>
+                    </div>
+                </div>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                    <div id="formStatus" class="form-status"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2026 Jackson Enrique Reyes Ibarra. Todos los derechos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
